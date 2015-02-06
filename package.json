@@ -11,6 +11,7 @@
     "url": "https://github.com/UKHomeOffice/govuk-template-compiler.git"
   },
   "author": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/UKHomeOffice/govuk-template-compiler/issues"
   },
