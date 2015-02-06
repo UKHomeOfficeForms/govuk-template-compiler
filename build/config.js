@@ -1,5 +1,5 @@
 module.exports = {
-  assetPath: '{{assetPath}}',
+  assetPath: '{{govukAssetPath}}',
   afterHeader: '{{$afterHeader}}{{/afterHeader}}',
   bodyClasses: '{{$bodyClasses}}{{/bodyClasses}}',
   bodyEnd: '{{$bodyEnd}}{{/bodyEnd}}',
