@@ -1,7 +1,7 @@
 {
-  "name": "govuk-template-compiler",
+  "name": "hmpo-govuk-template",
   "version": "0.0.0",
-  "description": "npm module to compile govuk mustache template into a more workable format",
+  "description": "Compile govuk mustache template into a more usable format and provide middleware for use in apps",
   "scripts": {
     "postinstall": "node ./build/index.js"
   },
