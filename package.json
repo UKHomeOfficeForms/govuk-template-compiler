@@ -1,0 +1,21 @@
+{
+  "name": "govuk-template-compiler",
+  "version": "0.0.0",
+  "description": "npm module to compile govuk mustache template into a more workable format",
+  "scripts": {
+    "postinstall": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UKHomeOffice/govuk-template-compiler.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/UKHomeOffice/govuk-template-compiler/issues"
+  },
+  "homepage": "https://github.com/UKHomeOffice/govuk-template-compiler",
+  "dependencies": {
+    "govuk_template_mustache": "0.12.0",
+    "hogan.js": "3.0.2"
+  }
+}
