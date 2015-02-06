@@ -54,3 +54,13 @@ A number of options can be passed with the app into the setup method:
 * `path` - Sets the base path for the location of static assets - Default: `/govuk-assets`
 
 Other options are passed onto the [serve-static](https://www.npmjs.com/package/serve-static) configuration, and more details can be found in [the serve-static documentation](https://www.npmjs.com/package/serve-static)
+
+## Example
+
+There is an example implmentation in '/example'. To run:
+
+```
+cd example
+npm install
+npm start
+```
