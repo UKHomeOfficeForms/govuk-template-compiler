@@ -9,8 +9,8 @@ module.exports = {
             assetpath = '';
         }
 
-        assetpath = assetpath || '/govuk-assets';
         options = options || {};
+        assetpath = assetpath || options.path || '/govuk-assets';
 
         app.use(assetpath, static(path.join(__dirname, './node_modules/govuk_template_mustache/assets'), options));
         app.use(function (req, res, next) {
