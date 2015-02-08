@@ -11,9 +11,9 @@ Compiling the template to replace these placeholders with variables allows for t
 ```
 {{< govuk-template}}
 
-    {{$content}}
+    {{$main}}
         <h1>Page Content</h1>
-    {{/content}}
+    {{/main}}
 
 {{/ govuk-template}}
 ```
@@ -41,9 +41,9 @@ require('hmpo-govuk-template').setup(app[, { ... options ...}]);
 ```
 {{< govuk-template}}
     {{$pageTitle}}An example page{{/pageTitle}}
-    {{$content}}
+    {{$main}}
         <h1>Page Content</h1>
-    {{/content}}
+    {{/main}}
 {{/ govuk-template}}
 ```
 
