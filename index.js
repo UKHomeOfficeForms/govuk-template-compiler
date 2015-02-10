@@ -11,7 +11,7 @@ module.exports = {
 
         app.use(options.path, servestatic(path.join(basedir, './assets'), options));
         app.use(function (req, res, next) {
-            res.locals.govukAssetPath = options.path + '/';
+            res.locals.govukAssetPath = req.baseUrl + options.path + '/';
             res.locals.partials = res.locals.partials || {};
             res.locals.partials['govuk-template'] = path.resolve(__dirname, './govuk_template');
             next();
