@@ -17,5 +17,6 @@ module.exports = {
             next();
         });
 
-    }
+    },
+    assetPath: path.join(basedir, './assets')
 };
