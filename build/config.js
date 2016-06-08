@@ -1,4 +1,5 @@
 module.exports = {
+  htmlLang: '{{htmlLang}}',
   assetPath: '{{govukAssetPath}}',
   afterHeader: '{{$afterHeader}}{{/afterHeader}}',
   bodyClasses: '{{$bodyClasses}}{{/bodyClasses}}',
