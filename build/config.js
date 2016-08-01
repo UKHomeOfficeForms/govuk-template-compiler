@@ -10,6 +10,8 @@ module.exports = {
   footerTop: '{{$footerTop}}{{/footerTop}}',
   head: '{{$head}}{{/head}}',
   headerClass: '{{$headerClass}}{{/headerClass}}',
+  homepageUrl: '{{$homepageUrl}}https://www.gov.uk{{/homepageUrl}}',
+  logoLinkTitle: '{{$logoLinkTitle}}Go to the GOV.UK homepage{{/logoLinkTitle}}',
   insideHeader: '{{$insideHeader}}{{/insideHeader}}',
   pageTitle: '{{$pageTitle}}{{/pageTitle}}',
   propositionHeader: '{{$propositionHeader}}{{/propositionHeader}}',
