@@ -1,6 +1,6 @@
 {
-  "name": "hmpo-govuk-template",
-  "version": "0.1.1",
+  "name": "hof-govuk-template",
+  "version": "0.0.0",
   "description": "Compile govuk mustache template into a more usable format and provide middleware for use in apps",
   "scripts": {
     "postinstall": "node ./build/index.js"
@@ -8,14 +8,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/UKHomeOffice/govuk-template-compiler.git"
+    "url": "https://github.com/UKHomeOfficeForms/hof-govuk-template.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UKHomeOffice/govuk-template-compiler/issues"
+    "url": "https://github.com/UKHomeOfficeForms/hof-govuk-template/issues"
   },
-  "homepage": "https://github.com/UKHomeOffice/govuk-template-compiler",
+  "homepage": "https://github.com/UKHomeOfficeForms/hof-govuk-template",
   "dependencies": {
     "govuk_template_mustache": "^0.17.3",
     "hogan.js": "3.0.2",
