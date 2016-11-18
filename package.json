@@ -1,6 +1,6 @@
 {
   "name": "hof-govuk-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Compile govuk mustache template into a more usable format and provide middleware for use in apps",
   "scripts": {
     "postinstall": "node ./build/index.js"
