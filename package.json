@@ -1,6 +1,6 @@
 {
   "name": "hof-govuk-template",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Compile govuk mustache template into a more usable format and provide middleware for use in apps",
   "scripts": {
     "lint": "eslint .",
