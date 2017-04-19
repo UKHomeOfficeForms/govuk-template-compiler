@@ -1,4 +1,4 @@
-# hmpo-govuk-template
+# hof-govuk-template
 
 Compiles govuk mustache template into a more usable format and provide middleware for use in apps.
 
@@ -21,20 +21,18 @@ Compiling the template to replace these placeholders with variables allows for t
 ## Installation
 
 ```
-npm install [--save] hmpo-govuk-template
+npm install [--save] hof-govuk-template
 ```
 
 ## Usage
 
-The compilation of the template is performed automatically as an npm postinstall hook.
-
-When used as part of an express app, a setup method is provided which will add a static-middleware (using [serve-static](https://www.npmjs.com/package/serve-static)) to serve the template assets without needing to copy them to any other location.
+When used as part of an express app, a middleware is returned which will add a static fileserver (using [serve-static](https://www.npmjs.com/package/serve-static)) to serve the template assets without needing to copy them to any other location.
 
 It will also add the template as a mustache partial with a name of "govuk-template".
 
 ### To configure express middleware
 ```
-require('hmpo-govuk-template').setup(app[, { ... options ...}]);
+app.use(require('hof-govuk-template')([options]);
 ```
 
 ### To use the mustache partial
