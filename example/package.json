@@ -8,7 +8,7 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.11.2",
-    "hmpo-govuk-template": "^0.0.1",
+    "hof-govuk-template": "^2.0.0",
     "hogan-express": "^0.5.2"
   }
 }

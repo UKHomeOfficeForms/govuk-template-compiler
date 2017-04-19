@@ -1,13 +1,13 @@
-var Hogan = require('hogan.js'),
-    fs = require('fs'),
-    util = require('util'),
-    path = require('path'),
-    govukConfig = require('./config'),
-    compiledTemplate,
-    govukTemplate;
+'use strict';
 
-var template = require.resolve('govuk_template_mustache/views/layouts/govuk_template.html');
+const Hogan = require('hogan.js');
+const fs = require('fs');
+const path = require('path');
+const govukConfig = require('./config');
 
-govukTemplate = fs.readFileSync(template, { encoding : 'utf-8' });
-compiledTemplate = Hogan.compile(govukTemplate);
-fs.writeFileSync(path.resolve(__dirname, '../govuk_template.html'), compiledTemplate.render(govukConfig), { encoding : 'utf-8' });
+const template = require.resolve('govuk_template_mustache/views/layouts/govuk_template.html');
+
+const govukTemplate = fs.readFileSync(template, { encoding: 'utf-8' });
+const compiledTemplate = Hogan.compile(govukTemplate).render(govukConfig);
+const output = path.resolve(__dirname, '../govuk_template.html');
+fs.writeFileSync(output, compiledTemplate, { encoding: 'utf-8' });

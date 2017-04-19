@@ -1,14 +1,17 @@
-var express = require('express');
+'use strict';
 
-var app = express();
+const path = require('path');
+const express = require('express');
+const template = require('hof-govuk-template');
 
-require('hmpo-govuk-template').setup(app);
+const app = express();
 
 app.engine('html', require('hogan-express'));
-app.set('view engine', 'html'); // Use .html extensions
-app.set('views', __dirname + '/views');
+app.set('view engine', 'html');
+app.set('views', path.resolve(__dirname, 'views'));
 
-app.get('*', function (req, res) {
+app.use(template());
+app.get('*', (req, res) => {
     res.render('index');
 });
 
