@@ -1,3 +1,5 @@
+'use strict';
+/* eslint max-len: 0 */
 module.exports = {
   htmlLang: '{{htmlLang}}',
   assetPath: '{{govukAssetPath}}',

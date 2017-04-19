@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Compile govuk mustache template into a more usable format and provide middleware for use in apps",
   "scripts": {
-    "postinstall": "node ./build/index.js"
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "prepublish": "node ./build/index.js"
   },
   "main": "index.js",
   "repository": {
@@ -17,8 +19,13 @@
   },
   "homepage": "https://github.com/UKHomeOfficeForms/hof-govuk-template",
   "dependencies": {
+    "express": "^4.15.2",
     "govuk_template_mustache": "^0.17.3",
-    "hogan.js": "3.0.2",
     "serve-static": "^1.10.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-homeoffice": "^2.1.2",
+    "hogan.js": "3.0.2"
   }
 }
