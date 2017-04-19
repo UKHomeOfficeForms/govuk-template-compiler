@@ -9,7 +9,7 @@ app.engine('html', require('hogan-express'));
 app.set('view engine', 'html');
 app.set('views', path.resolve(__dirname, 'views'));
 
-app.use(require('hmpo-govuk-template'));
+app.use(require('hof-govuk-template'));
 app.get('*', (req, res) => {
     res.render('index');
 });
