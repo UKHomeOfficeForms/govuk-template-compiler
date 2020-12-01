@@ -53,6 +53,11 @@ A number of options can be passed with the app into the setup method:
 
 Other options are passed onto the [serve-static](https://www.npmjs.com/package/serve-static) configuration, and more details can be found in [the serve-static documentation](https://www.npmjs.com/package/serve-static)
 
+# Nonce values
+Version 18.0.0 and above of HOF provides and requires a nonce value for all inline javascript, as unsafe-inline is disabled.
+Older versions (pre 18.0.0) will work with the hof-govuk-template templates as expected as the nonce value fields will only be added
+if a nonce value is provided by the version of HOF.
+
 ## Example
 
 There is an example implmentation in '/example'. To run:
