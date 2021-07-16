@@ -20,7 +20,7 @@
   "homepage": "https://github.com/UKHomeOfficeForms/hof-govuk-template",
   "dependencies": {
     "express": "^4.15.2",
-    "govuk_template_mustache": "^0.17.3",
+    "govuk_template_mustache": "^0.26.0",
     "serve-static": "^1.10.3"
   },
   "devDependencies": {
